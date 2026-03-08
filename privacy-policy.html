@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — CasaMálaga | GDPR &amp; Data Protection</title>
+<meta name="description" content="CasaMálaga privacy policy — how we collect, use and protect your personal data in compliance with GDPR and Spanish data protection law (LOPDGDD).">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0E7AA7">
+<link rel="canonical" href="https://casamalaga.eu/privacy-policy.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CasaMálaga">
+<meta property="og:title" content="Privacy Policy — CasaMálaga">
+<meta property="og:description" content="How CasaMálaga collects and protects your personal data. GDPR-compliant privacy policy for guests and website visitors.">
+<meta property="og:image" content="https://casamalaga.eu/images/11-extra3.jpg">
+<meta property="og:url" content="https://casamalaga.eu/privacy-policy.html">
+<meta property="og:locale" content="en_GB">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary-600: #0E7AA7;
+    --primary-700: #0B6387;
+    --primary-100: #E7F4FA;
+    --accent-600: #E4572E;
+    --sand-50: #FBF7F0;
+    --neutral-950: #0B0D0F;
+    --neutral-700: #3A414A;
+    --neutral-500: #6B7683;
+    --neutral-200: #E7EAEE;
+    --neutral-50: #F8FAFC;
+    --white: #FFFFFF;
+
+    --s8: 8px; --s12: 12px; --s16: 16px; --s20: 20px; --s24: 24px;
+    --s32: 32px; --s40: 40px; --s48: 48px; --s56: 56px; --s64: 64px;
+    --s72: 72px; --s96: 96px;
+
+    --r-card: 16px;
+    --r-btn: 12px;
+    --r-pill: 999px;
+
+    --font-head: 'Fraunces', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; font-size: 16px; }
+  body {
+    font-family: var(--font-body);
+    color: var(--neutral-950);
+    background: var(--white);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  button { cursor: pointer; font-family: inherit; border: none; }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--s24);
+  }
+
+  /* Typography */
+  .eyebrow {
+    font-family: var(--font-body);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--neutral-500);
+    font-weight: 500;
+  }
+  h1 {
+    font-family: var(--font-head);
+    font-size: clamp(36px, 4.5vw, 52px);
+    line-height: 1.1;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s8);
+    height: 44px;
+    padding: 0 var(--s20);
+    border-radius: var(--r-btn);
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    cursor: pointer;
+    border: none;
+  }
+  .btn-secondary {
+    background: var(--white);
+    color: var(--neutral-950);
+    border: 1.5px solid var(--neutral-200);
+  }
+  .btn-secondary:hover { border-color: var(--neutral-950); }
+  .header-back {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s8);
+    height: 38px;
+    padding: 0 var(--s16);
+    border-radius: var(--r-btn);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary-600);
+    border: 1.5px solid var(--primary-600);
+    transition: all 0.2s ease;
+  }
+  .header-back:hover { background: var(--primary-100); }
+
+  /* Header */
+  header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--neutral-200);
+    height: 64px;
+  }
+  header .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    font-family: var(--font-head);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--neutral-950);
+    letter-spacing: -0.02em;
+  }
+  .logo span { color: var(--primary-600); }
+  nav ul { list-style: none; display: flex; gap: var(--s32); }
+  nav ul li a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--neutral-700);
+    transition: color 0.2s;
+  }
+  nav ul li a:hover { color: var(--neutral-950); }
+  .burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    padding: 4px;
+  }
+  .burger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--neutral-950);
+    border-radius: 2px;
+  }
+  .nav-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(11,13,15,0.4);
+    z-index: 200;
+  }
+  .nav-overlay.visible { display: block; }
+  .mobile-nav {
+    position: fixed;
+    top: 0; right: -300px;
+    width: 280px;
+    height: 100%;
+    background: var(--white);
+    z-index: 300;
+    padding: var(--s64) var(--s32);
+    transition: right 0.3s ease;
+  }
+  .mobile-nav.open { right: 0; }
+  .mobile-nav ul { list-style: none; display: flex; flex-direction: column; }
+  .mobile-nav ul li a {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--neutral-700);
+    padding: var(--s12) 0;
+    border-bottom: 1px solid var(--neutral-200);
+  }
+  .mobile-nav-close {
+    position: absolute;
+    top: var(--s16); right: var(--s16);
+    background: none;
+    font-size: 20px;
+    color: var(--neutral-500);
+  }
+
+  /* Page hero */
+  .page-hero {
+    padding: 120px 0 var(--s64);
+    background: var(--sand-50);
+    border-bottom: 1px solid var(--neutral-200);
+  }
+  .page-hero-inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--s32);
+  }
+  .page-hero-text { display: flex; flex-direction: column; gap: var(--s12); }
+  .page-hero-meta { font-size: 15px; color: var(--neutral-500); }
+
+  /* Policy content */
+  .policy-page { padding: var(--s96) 0; }
+  .policy-layout {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: var(--s64);
+    align-items: start;
+  }
+
+  /* Prose */
+  .prose { display: flex; flex-direction: column; gap: var(--s48); }
+  .prose-section { display: flex; flex-direction: column; gap: var(--s16); }
+  .prose-section h2 {
+    font-family: var(--font-head);
+    font-size: clamp(20px, 2vw, 26px);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    padding-bottom: var(--s16);
+    border-bottom: 2px solid var(--neutral-200);
+  }
+  .prose-section p {
+    font-size: 15px;
+    color: var(--neutral-700);
+    line-height: 1.75;
+  }
+  .prose-section a {
+    color: var(--primary-600);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .prose-section ul, .prose-section ol {
+    padding-left: var(--s24);
+    display: flex;
+    flex-direction: column;
+    gap: var(--s8);
+  }
+  .prose-section li {
+    font-size: 15px;
+    color: var(--neutral-700);
+    line-height: 1.65;
+  }
+  .prose-section strong { color: var(--neutral-950); font-weight: 600; }
+
+  /* Rights grid */
+  .rights-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s16);
+  }
+  .right-card {
+    background: var(--sand-50);
+    border: 1px solid var(--neutral-200);
+    border-radius: var(--r-card);
+    padding: var(--s20);
+  }
+  .right-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--neutral-950);
+    margin-bottom: var(--s8);
+    display: flex;
+    align-items: center;
+    gap: var(--s8);
+  }
+  .right-card-title svg { color: var(--primary-600); flex-shrink: 0; }
+  .right-card p { font-size: 13px; color: var(--neutral-500); line-height: 1.55; }
+
+  /* Table of contents (sidebar) */
+  .toc { position: sticky; top: 88px; }
+  .toc-card {
+    background: var(--sand-50);
+    border: 1px solid var(--neutral-200);
+    border-radius: var(--r-card);
+    padding: var(--s24);
+  }
+  .toc-card h4 {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--neutral-500);
+    margin-bottom: var(--s16);
+  }
+  .toc-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+  .toc-list li a {
+    display: block;
+    font-size: 13px;
+    color: var(--neutral-700);
+    padding: var(--s8) var(--s12);
+    border-radius: var(--r-btn);
+    transition: all 0.15s;
+    line-height: 1.4;
+  }
+  .toc-list li a:hover { background: var(--primary-100); color: var(--primary-700); }
+  .toc-updated {
+    font-size: 12px;
+    color: var(--neutral-500);
+    margin-top: var(--s16);
+    padding-top: var(--s16);
+    border-top: 1px solid var(--neutral-200);
+  }
+
+  /* Footer */
+  #footer { background: var(--neutral-950); padding: var(--s64) 0 var(--s40); }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--s48);
+    margin-bottom: var(--s48);
+  }
+  .footer-brand .logo { color: var(--white); margin-bottom: var(--s16); display: block; }
+  .footer-brand p { font-size: 14px; line-height: 1.7; color: rgba(255,255,255,0.55); max-width: 240px; }
+  .footer-col h5 {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: var(--s16);
+  }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: var(--s8); }
+  .footer-col ul li a { font-size: 14px; color: rgba(255,255,255,0.65); transition: color 0.2s; }
+  .footer-col ul li a:hover { color: var(--white); }
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--s32);
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .footer-bottom p { font-size: 13px; color: rgba(255,255,255,0.35); }
+  .footer-badges { display: flex; gap: var(--s12); }
+  .footer-badge {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.06);
+    border-radius: var(--r-pill);
+    padding: 4px 12px;
+  }
+
+  /* Responsive */
+  @media (max-width: 1023px) {
+    .policy-layout { grid-template-columns: 1fr; }
+    .toc { position: static; }
+    nav ul { display: none; }
+    .burger { display: flex; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 767px) {
+    .page-hero-inner { flex-direction: column; align-items: flex-start; }
+    .rights-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; text-align: center; gap: var(--s16); }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container">
+    <a href="index.html" class="logo">Casa<span>Málaga</span></a>
+    <nav>
+      <ul>
+        <li><a href="index.html#house">The House</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#amenities">Amenities</a></li>
+        <li><a href="index.html#location">Location</a></li>
+        <li><a href="index.html#footer">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;align-items:center;gap:var(--s12);">
+      <a href="https://www.vacation-bookings.com/d/46175606?ctx=QCKrYvO2bT" target="_blank" rel="noopener" class="header-back">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Check availability
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="nav-overlay" id="navOverlay"></div>
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="navClose" aria-label="Close menu">✕</button>
+  <ul>
+    <li><a href="index.html#house" class="nav-link-mobile">The House</a></li>
+    <li><a href="index.html#gallery" class="nav-link-mobile">Gallery</a></li>
+    <li><a href="index.html#amenities" class="nav-link-mobile">Amenities</a></li>
+    <li><a href="index.html#location" class="nav-link-mobile">Location</a></li>
+    <li><a href="index.html#footer" class="nav-link-mobile">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner">
+      <div class="page-hero-text">
+        <span class="eyebrow">Legal</span>
+        <h1>Privacy policy</h1>
+        <p class="page-hero-meta">CasaMálaga · Last updated: March 2025</p>
+      </div>
+      <a href="index.html" class="btn btn-secondary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to property
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<section class="policy-page">
+  <div class="container">
+    <div class="policy-layout">
+
+      <div class="prose">
+
+        <div class="prose-section" id="controller">
+          <h2>1. Data controller</h2>
+          <p>
+            This website (<strong>casamalaga.eu</strong>) is operated by the owner of CasaMálaga, a private holiday rental property located in Málaga, Andalucía, Spain. For any data-related enquiries, please contact us at:
+          </p>
+          <ul>
+            <li>Email: <a href="mailto:hello@casamalaga.eu">hello@casamalaga.eu</a></li>
+            <li>WhatsApp: <a href="https://wa.me/34666228672" target="_blank" rel="noopener">+34 666 228 672</a></li>
+          </ul>
+          <p>
+            As the property is based in Spain, this policy is governed by the <strong>EU General Data Protection Regulation (GDPR)</strong> (Regulation 2016/679) and the Spanish <em>Ley Orgánica de Protección de Datos y Garantía de los Derechos Digitales</em> (LOPDGDD).
+          </p>
+        </div>
+
+        <div class="prose-section" id="what-we-collect">
+          <h2>2. What data we collect</h2>
+          <p>This website is a static informational site. We do not operate our own booking system or contact form. The data we may collect or process is limited to:</p>
+          <ul>
+            <li><strong>Direct contact data</strong> — if you email us or send a WhatsApp message, we receive your name, contact details, and the content of your message.</li>
+            <li><strong>Booking data</strong> — if you make a reservation through our booking partner (Holidu / Bookiply via vacation-bookings.com), your booking data (name, email, travel dates, payment information) is collected and processed by them under their own privacy policy.</li>
+            <li><strong>Technical data</strong> — standard web server logs may record your IP address, browser type, and pages visited. This data is not used to identify individuals.</li>
+          </ul>
+          <p>We do <strong>not</strong> use analytics tools (such as Google Analytics), run advertising, or track visitors across other websites.</p>
+        </div>
+
+        <div class="prose-section" id="legal-basis">
+          <h2>3. Legal basis for processing</h2>
+          <p>Where we process personal data, we rely on the following legal bases under GDPR Article 6:</p>
+          <ul>
+            <li><strong>Contract performance (Art. 6(1)(b))</strong> — processing your booking and stay information is necessary to fulfil the rental contract.</li>
+            <li><strong>Legitimate interests (Art. 6(1)(f))</strong> — responding to enquiries you initiate, and basic website security logging.</li>
+            <li><strong>Legal obligation (Art. 6(1)(c))</strong> — Spanish tourist accommodation regulations require us to register guests' identity documents with the authorities (Guardia Civil / Policía Nacional) within 24 hours of check-in.</li>
+          </ul>
+        </div>
+
+        <div class="prose-section" id="third-parties">
+          <h2>4. Third-party services</h2>
+          <p>This website uses a small number of third-party services. Each processes data under their own privacy policies:</p>
+          <ul>
+            <li>
+              <strong>Holidu / Bookiply</strong> — our booking platform. When you book, your data is processed by Holidu GmbH (Munich, Germany). See their <a href="https://www.holidu.com/privacy-policy" target="_blank" rel="noopener">privacy policy</a>.
+            </li>
+            <li>
+              <strong>Google Fonts</strong> — this site loads typefaces from Google's font CDN. Your IP address is transmitted to Google servers when the page loads. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>. No cookie is set.
+            </li>
+            <li>
+              <strong>WhatsApp / Meta</strong> — if you contact us via WhatsApp, your communication is processed by Meta Platforms Ireland Ltd. See <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener">WhatsApp's privacy policy</a>.
+            </li>
+            <li>
+              <strong>OpenStreetMap</strong> — the map on this site is embedded from OpenStreetMap. Your IP address may be transmitted to their servers when the map loads. See <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">OSM's privacy policy</a>.
+            </li>
+          </ul>
+        </div>
+
+        <div class="prose-section" id="guest-registration">
+          <h2>5. Guest registration (legal requirement)</h2>
+          <p>
+            Under Spanish law (Royal Decree 933/2021), all tourist accommodation operators in Spain are required to collect and register guests' personal data — including full name, nationality, document type and number, and date of birth — and submit it to the Spanish authorities within 24 hours of check-in.
+          </p>
+          <p>
+            This data is collected at check-in, processed solely for legal compliance, and is not used for any marketing purpose. Retention is governed by the applicable statutory periods.
+          </p>
+        </div>
+
+        <div class="prose-section" id="retention">
+          <h2>6. Data retention</h2>
+          <ul>
+            <li><strong>Booking &amp; guest records</strong> — retained for the period required by Spanish tax and accommodation law (generally 5–7 years).</li>
+            <li><strong>Direct enquiries</strong> (email / WhatsApp) — retained for up to 2 years from the last interaction, then deleted.</li>
+            <li><strong>Server logs</strong> — automatically overwritten within 30 days.</li>
+          </ul>
+        </div>
+
+        <div class="prose-section" id="your-rights">
+          <h2>7. Your rights under GDPR</h2>
+          <p>As a data subject under EU law, you have the following rights. To exercise any of them, contact us at <a href="mailto:hello@casamalaga.eu">hello@casamalaga.eu</a>.</p>
+          <div class="rights-grid">
+            <div class="right-card">
+              <div class="right-card-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                Right of access
+              </div>
+              <p>Request a copy of the personal data we hold about you.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                Right to rectification
+              </div>
+              <p>Ask us to correct inaccurate or incomplete data.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+                Right to erasure
+              </div>
+              <p>Request deletion of your data, where no legal obligation requires us to keep it.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>
+                Right to portability
+              </div>
+              <p>Receive your data in a structured, machine-readable format.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+                Right to object
+              </div>
+              <p>Object to processing based on legitimate interests.</p>
+            </div>
+            <div class="right-card">
+              <div class="right-card-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
+                Right to restrict
+              </div>
+              <p>Request that we limit processing of your data in certain circumstances.</p>
+            </div>
+          </div>
+          <p>You also have the right to <strong>lodge a complaint</strong> with the Spanish data protection authority: <a href="https://www.aepd.es" target="_blank" rel="noopener">Agencia Española de Protección de Datos (AEPD)</a>.</p>
+        </div>
+
+        <div class="prose-section" id="cookies">
+          <h2>8. Cookies</h2>
+          <p>
+            This website does not use cookies for tracking, analytics, or advertising. The only cookies that may be set are technical session cookies placed by embedded third-party content (such as the OpenStreetMap iframe). These are not used to identify you and are not accessible by us.
+          </p>
+        </div>
+
+        <div class="prose-section" id="security">
+          <h2>9. Security</h2>
+          <p>
+            We take reasonable technical and organisational measures to protect personal data. The website is served over HTTPS. Direct communications (email, WhatsApp) are encrypted in transit by the respective platforms.
+          </p>
+          <p>
+            In the unlikely event of a data breach that risks your rights and freedoms, we will notify the relevant supervisory authority within 72 hours as required by GDPR Article 33.
+          </p>
+        </div>
+
+        <div class="prose-section" id="changes">
+          <h2>10. Changes to this policy</h2>
+          <p>
+            We may update this policy from time to time. The "Last updated" date at the top of this page will reflect the most recent revision. Continued use of the website after changes are posted constitutes acceptance of the updated policy. For material changes, we will notify guests who have an active booking.
+          </p>
+          <p>
+            For any questions about this privacy policy, please contact us at <a href="mailto:hello@casamalaga.eu">hello@casamalaga.eu</a>.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Table of contents -->
+      <aside class="toc">
+        <div class="toc-card">
+          <h4>Contents</h4>
+          <ol class="toc-list">
+            <li><a href="#controller">1. Data controller</a></li>
+            <li><a href="#what-we-collect">2. What we collect</a></li>
+            <li><a href="#legal-basis">3. Legal basis</a></li>
+            <li><a href="#third-parties">4. Third-party services</a></li>
+            <li><a href="#guest-registration">5. Guest registration</a></li>
+            <li><a href="#retention">6. Data retention</a></li>
+            <li><a href="#your-rights">7. Your rights</a></li>
+            <li><a href="#cookies">8. Cookies</a></li>
+            <li><a href="#security">9. Security</a></li>
+            <li><a href="#changes">10. Changes</a></li>
+          </ol>
+          <p class="toc-updated">Last updated: March 2025</p>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Casa<span>Málaga</span></a>
+        <p>A beautifully restored Andalusian appartment in Málaga's historic centre. Your calm courtyard sanctuary in the heart of the city.</p>
+      </div>
+      <div class="footer-col">
+        <h5>The Property</h5>
+        <ul>
+          <li><a href="index.html#house">The House</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="index.html#location">Location</a></li>
+          <li><a href="index.html#booking-check">Check availability</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Málaga</h5>
+        <ul>
+          <li><a href="index.html#malaga">Highlights</a></li>
+          <li><a href="index.html#malaga">Culture</a></li>
+          <li><a href="index.html#malaga">Food &amp; Leisure</a></li>
+          <li><a href="index.html#location">Getting here</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="https://wa.me/34666228672">WhatsApp</a></li>
+          <li><a href="mailto:hello@casamalaga.eu">hello@casamalaga.eu</a></li>
+          <li><a href="house-rules.html">House rules</a></li>
+          <li><a href="cancellation-policy.html">Cancellation policy</a></li>
+          <li><a href="privacy-policy.html">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 CasaMálaga.eu · All rights reserved</p>
+      <div class="footer-badges">
+        <span class="footer-badge">🔒 Secure booking</span>
+        <span class="footer-badge">⭐ 4.9 rating</span>
+        <span class="footer-badge">🏡 Verified property</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const burger = document.getElementById('burger');
+  const mobileNav = document.getElementById('mobileNav');
+  const navOverlay = document.getElementById('navOverlay');
+  const navClose = document.getElementById('navClose');
+
+  function openNav() {
+    mobileNav.classList.add('open');
+    navOverlay.classList.add('visible');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeNav() {
+    mobileNav.classList.remove('open');
+    navOverlay.classList.remove('visible');
+    document.body.style.overflow = '';
+  }
+
+  burger.addEventListener('click', openNav);
+  navClose.addEventListener('click', closeNav);
+  navOverlay.addEventListener('click', closeNav);
+  document.querySelectorAll('.nav-link-mobile').forEach(link => {
+    link.addEventListener('click', closeNav);
+  });
+</script>
+
+</body>
+</html>

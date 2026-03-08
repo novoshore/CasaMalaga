@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery — CasaMálaga | 22 Photos of the Apartment</title>
+<meta name="description" content="Browse all 22 photos of CasaMálaga — bedrooms, living room, kitchen, courtyard patio, dining area and more. An Andalusian appartment in Málaga's historic centre.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0E7AA7">
+<link rel="canonical" href="https://casamalaga.eu/gallery.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CasaMálaga">
+<meta property="og:title" content="Photo Gallery — CasaMálaga | 22 Photos">
+<meta property="og:description" content="Browse all 22 photos of CasaMálaga — bedrooms, living room, kitchen, courtyard patio and more. Andalusian appartment in Málaga's historic centre.">
+<meta property="og:image" content="https://casamalaga.eu/images/04-courtyard.jpg">
+<meta property="og:image:alt" content="CasaMálaga — private courtyard patio, Málaga">
+<meta property="og:url" content="https://casamalaga.eu/gallery.html">
+<meta property="og:locale" content="en_GB">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Photo Gallery — CasaMálaga | 22 Photos">
+<meta name="twitter:description" content="Browse all 22 photos of CasaMálaga — an Andalusian appartment in Málaga's historic centre.">
+<meta name="twitter:image" content="https://casamalaga.eu/images/04-courtyard.jpg">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+  /* =============================================
+     TOKENS & CSS VARIABLES
+  ============================================= */
+  :root {
+    --primary-600: #0E7AA7;
+    --primary-700: #0B6387;
+    --primary-100: #E7F4FA;
+    --accent-600: #E4572E;
+    --accent-100: #FCE7E0;
+    --sand-50: #FBF7F0;
+    --neutral-950: #0B0D0F;
+    --neutral-700: #3A414A;
+    --neutral-500: #6B7683;
+    --neutral-200: #E7EAEE;
+    --neutral-50: #F8FAFC;
+    --white: #FFFFFF;
+
+    --s8: 8px; --s12: 12px; --s16: 16px; --s20: 20px; --s24: 24px;
+    --s32: 32px; --s40: 40px; --s48: 48px; --s56: 56px; --s64: 64px;
+    --s72: 72px; --s96: 96px;
+
+    --r-card: 16px;
+    --r-btn: 12px;
+    --r-pill: 999px;
+    --r-img: 16px;
+
+    --shadow-soft: 0 10px 30px rgba(11,13,15,0.09);
+    --shadow-hover: 0 14px 40px rgba(11,13,15,0.13);
+
+    --font-head: 'Fraunces', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+
+  /* =============================================
+     RESET & BASE
+  ============================================= */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; font-size: 16px; }
+  body {
+    font-family: var(--font-body);
+    color: var(--neutral-950);
+    background: var(--white);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  button { cursor: pointer; font-family: inherit; border: none; }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--s24);
+  }
+
+  /* =============================================
+     TYPOGRAPHY
+  ============================================= */
+  .eyebrow {
+    font-family: var(--font-body);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--neutral-500);
+    font-weight: 500;
+  }
+  h1 {
+    font-family: var(--font-head);
+    font-size: clamp(36px, 4.5vw, 52px);
+    line-height: 1.1;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+
+  /* =============================================
+     BUTTONS
+  ============================================= */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s8);
+    height: 44px;
+    padding: 0 var(--s20);
+    border-radius: var(--r-btn);
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .btn-primary {
+    background: var(--primary-600);
+    color: var(--white);
+    border: none;
+  }
+  .btn-primary:hover {
+    background: var(--primary-700);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-hover);
+  }
+  .btn-secondary {
+    background: var(--white);
+    color: var(--neutral-950);
+    border: 1px solid var(--neutral-200);
+  }
+  .btn-secondary:hover {
+    border-color: var(--primary-600);
+    color: var(--primary-600);
+    transform: translateY(-1px);
+  }
+
+  /* =============================================
+     HEADER
+  ============================================= */
+  #header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.97);
+    border-bottom: 1px solid var(--neutral-200);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(11,13,15,0.06);
+  }
+  #header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .logo {
+    font-family: var(--font-head);
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    color: var(--neutral-950);
+  }
+  .logo span { color: var(--accent-600); }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: var(--s32);
+    list-style: none;
+  }
+  .nav-links a {
+    font-size: 14px;
+    color: var(--neutral-700);
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--primary-600); }
+  .header-back {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s8);
+    height: 38px;
+    padding: 0 var(--s16);
+    border-radius: var(--r-btn);
+    font-size: 14px;
+    font-weight: 500;
+    background: var(--primary-600);
+    color: var(--white);
+    border: none;
+    transition: all 0.2s ease;
+  }
+  .header-back:hover { background: var(--primary-700); }
+
+  .burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+  .burger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--neutral-950);
+    border-radius: 2px;
+  }
+
+  /* Mobile Nav Drawer */
+  .mobile-nav {
+    position: fixed;
+    top: 0; right: -100%;
+    width: min(320px, 85vw);
+    height: 100vh;
+    background: var(--white);
+    z-index: 200;
+    padding: var(--s72) var(--s32) var(--s32);
+    transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: -20px 0 60px rgba(11,13,15,0.15);
+  }
+  .mobile-nav.open { right: 0; }
+  .mobile-nav ul { list-style: none; }
+  .mobile-nav ul li { border-bottom: 1px solid var(--neutral-200); }
+  .mobile-nav ul li a {
+    display: block;
+    padding: var(--s16) 0;
+    font-size: 18px;
+    color: var(--neutral-950);
+  }
+  .mobile-nav-close {
+    position: absolute;
+    top: var(--s24);
+    right: var(--s24);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--neutral-500);
+  }
+  .nav-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(11,13,15,0.4);
+    z-index: 190;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .nav-overlay.visible { display: block; opacity: 1; }
+
+  /* =============================================
+     PAGE HERO
+  ============================================= */
+  .page-hero {
+    padding-top: 120px;
+    padding-bottom: var(--s48);
+    background: var(--sand-50);
+    border-bottom: 1px solid var(--neutral-200);
+  }
+  .page-hero-inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--s32);
+  }
+  .page-hero-text { display: flex; flex-direction: column; gap: var(--s12); }
+  .page-hero-text .eyebrow { margin-bottom: var(--s4); }
+  .page-hero-meta {
+    font-size: 15px;
+    color: var(--neutral-500);
+    margin-top: var(--s8);
+  }
+
+  /* =============================================
+     GALLERY GRID
+  ============================================= */
+  .gallery-section {
+    padding: var(--s56) 0 var(--s96);
+    background: var(--white);
+  }
+
+  .masonry-grid {
+    columns: 3;
+    column-gap: var(--s16);
+  }
+  .masonry-item {
+    break-inside: avoid;
+    margin-bottom: var(--s16);
+    position: relative;
+    border-radius: var(--r-img);
+    overflow: hidden;
+    cursor: pointer;
+    background: var(--neutral-50);
+  }
+  .masonry-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+  .masonry-item:hover img { transform: scale(1.04); }
+  .masonry-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(11,13,15,0);
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .masonry-item:hover .masonry-overlay { background: rgba(11,13,15,0.28); }
+  .masonry-overlay svg {
+    width: 36px;
+    height: 36px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .masonry-item:hover .masonry-overlay svg { opacity: 1; }
+  .masonry-caption {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: var(--s12) var(--s16);
+    background: linear-gradient(to top, rgba(11,13,15,0.55) 0%, transparent 100%);
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .masonry-item:hover .masonry-caption { opacity: 1; }
+
+  /* =============================================
+     LIGHTBOX
+  ============================================= */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 500;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(11,13,15,0.92);
+    backdrop-filter: blur(8px);
+    padding: var(--s24);
+  }
+  .lightbox.open { display: flex; }
+  .lightbox-img-wrap {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    max-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .lightbox-img-wrap img {
+    max-width: 100%;
+    max-height: 85vh;
+    border-radius: var(--r-card);
+    box-shadow: 0 30px 80px rgba(11,13,15,0.6);
+    object-fit: contain;
+  }
+  .lightbox-close {
+    position: fixed;
+    top: var(--s24);
+    right: var(--s24);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    backdrop-filter: blur(4px);
+  }
+  .lightbox-close:hover { background: rgba(255,255,255,0.25); }
+  .lightbox-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    backdrop-filter: blur(4px);
+  }
+  .lightbox-nav:hover { background: rgba(255,255,255,0.25); }
+  .lightbox-prev { left: var(--s24); }
+  .lightbox-next { right: var(--s24); }
+  .lightbox-counter {
+    position: fixed;
+    bottom: var(--s24);
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    font-family: var(--font-body);
+  }
+  .lightbox-caption {
+    position: fixed;
+    bottom: var(--s56);
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255,255,255,0.9);
+    font-size: 15px;
+    font-family: var(--font-body);
+    text-align: center;
+  }
+
+  /* =============================================
+     CTA STRIP
+  ============================================= */
+  .cta-strip {
+    background: var(--sand-50);
+    border-top: 1px solid var(--neutral-200);
+    padding: var(--s40) 0;
+  }
+  .cta-strip-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--s32);
+  }
+  .cta-strip-text h3 {
+    font-family: var(--font-head);
+    font-size: clamp(20px, 2.5vw, 26px);
+    font-weight: 400;
+    margin-bottom: var(--s8);
+  }
+  .cta-strip-text p { font-size: 15px; color: var(--neutral-500); }
+  .cta-strip-actions { display: flex; gap: var(--s12); flex-shrink: 0; }
+  .btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s8);
+    height: 44px;
+    padding: 0 var(--s20);
+    border-radius: var(--r-btn);
+    background: #25D366;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  .btn-whatsapp:hover { background: #1fbc59; transform: translateY(-1px); }
+
+  /* =============================================
+     FOOTER
+  ============================================= */
+  #footer {
+    background: var(--neutral-950);
+    padding: var(--s56) 0 var(--s32);
+    color: rgba(255,255,255,0.7);
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--s40);
+    margin-bottom: var(--s48);
+    padding-bottom: var(--s48);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .footer-brand .logo { color: var(--white); margin-bottom: var(--s16); display: block; }
+  .footer-brand p { font-size: 14px; line-height: 1.7; color: rgba(255,255,255,0.55); max-width: 240px; }
+  .footer-col h5 {
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: var(--s16);
+  }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: var(--s8); }
+  .footer-col ul li a {
+    font-size: 14px;
+    color: rgba(255,255,255,0.65);
+    transition: color 0.2s;
+  }
+  .footer-col ul li a:hover { color: var(--white); }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--s16);
+  }
+  .footer-bottom p { font-size: 13px; color: rgba(255,255,255,0.35); }
+  .footer-badges { display: flex; gap: var(--s12); }
+  .footer-badge {
+    height: 28px;
+    padding: 0 var(--s12);
+    border-radius: var(--r-pill);
+    background: rgba(255,255,255,0.07);
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    display: flex;
+    align-items: center;
+  }
+
+  /* =============================================
+     RESPONSIVE
+  ============================================= */
+  @media (max-width: 1199px) {
+    .container { padding: 0 var(--s40); }
+    .masonry-grid { columns: 2; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 767px) {
+    .container { padding: 0 var(--s20); }
+    .masonry-grid { columns: 1; }
+    .nav-links { display: none; }
+    .burger { display: flex; }
+    .page-hero-inner { flex-direction: column; align-items: flex-start; }
+    .cta-strip-inner { flex-direction: column; align-items: flex-start; }
+    .cta-strip-actions { flex-direction: column; width: 100%; }
+    .cta-strip-actions .btn, .cta-strip-actions .btn-whatsapp { width: 100%; justify-content: center; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .lightbox-prev { left: var(--s8); }
+    .lightbox-next { right: var(--s8); }
+  }
+</style>
+</head>
+<body>
+
+<!-- =============================================
+     HEADER
+============================================= -->
+<header id="header">
+  <div class="container">
+    <a href="index.html" class="logo">Casa<span>Málaga</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html#house">The House</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#amenities">Amenities</a></li>
+        <li><a href="index.html#malaga">Málaga</a></li>
+        <li><a href="index.html#location">Location</a></li>
+        <li><a href="index.html#footer">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;align-items:center;gap:var(--s12);">
+      <a href="https://www.vacation-bookings.com/d/46175606?ctx=QCKrYvO2bT" target="_blank" rel="noopener" class="header-back">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Check availability
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="nav-overlay" id="navOverlay"></div>
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="navClose" aria-label="Close menu">✕</button>
+  <ul>
+    <li><a href="index.html#house" class="nav-link-mobile">The House</a></li>
+    <li><a href="index.html#gallery" class="nav-link-mobile">Gallery</a></li>
+    <li><a href="index.html#malaga" class="nav-link-mobile">Málaga</a></li>
+    <li><a href="index.html#location" class="nav-link-mobile">Location</a></li>
+    <li><a href="index.html#footer" class="nav-link-mobile">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- =============================================
+     PAGE HERO
+============================================= -->
+<div class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner">
+      <div class="page-hero-text">
+        <span class="eyebrow">Photography</span>
+        <h1>The full gallery</h1>
+        <p class="page-hero-meta">22 photos · CasaMálaga, Andalucía</p>
+      </div>
+      <a href="index.html" class="btn btn-secondary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to property
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- =============================================
+     GALLERY
+============================================= -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="masonry-grid" id="masonryGrid">
+
+      <div class="masonry-item" data-index="0">
+        <img src="images/01-hero.jpg" alt="CasaMálaga — courtyard view" loading="eager">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Courtyard view</div>
+      </div>
+
+      <div class="masonry-item" data-index="1">
+        <img src="images/02-living-room.jpg" alt="Living room" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Living room</div>
+      </div>
+
+      <div class="masonry-item" data-index="2">
+        <img src="images/03-bedroom.jpg" alt="Main bedroom" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Main bedroom</div>
+      </div>
+
+      <div class="masonry-item" data-index="3">
+        <img src="images/04-courtyard.jpg" alt="Courtyard patio" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Courtyard patio</div>
+      </div>
+
+      <div class="masonry-item" data-index="4">
+        <img src="images/05-dining.jpg" alt="Dining area" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Dining area</div>
+      </div>
+
+      <div class="masonry-item" data-index="5">
+        <img src="images/06-bedroom2.jpg" alt="Second bedroom" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Second bedroom</div>
+      </div>
+
+      <div class="masonry-item" data-index="6">
+        <img src="images/07-kitchen.jpg" alt="Kitchen" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Kitchen</div>
+      </div>
+
+      <div class="masonry-item" data-index="7">
+        <img src="images/08-patio.jpg" alt="Patio" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Patio</div>
+      </div>
+
+      <div class="masonry-item" data-index="8">
+        <img src="images/09-extra1.jpg" alt="Property interior" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Interior detail</div>
+      </div>
+
+      <div class="masonry-item" data-index="9">
+        <img src="images/10-extra2.jpg" alt="Property interior" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Interior detail</div>
+      </div>
+
+      <div class="masonry-item" data-index="10">
+        <img src="images/11-extra3.jpg" alt="Property interior" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Interior detail</div>
+      </div>
+
+      <div class="masonry-item" data-index="11">
+        <img src="images/12-extra4.jpg" alt="Property interior" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Interior detail</div>
+      </div>
+
+      <div class="masonry-item" data-index="12">
+        <img src="images/13-extra5.jpg" alt="Property interior" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Interior detail</div>
+      </div>
+
+      <div class="masonry-item" data-index="13">
+        <img src="images/14-extra6.jpg" alt="Property view" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Property view</div>
+      </div>
+
+      <div class="masonry-item" data-index="14">
+        <img src="images/15-extra7.jpg" alt="Living area" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Living area</div>
+      </div>
+
+      <div class="masonry-item" data-index="15">
+        <img src="images/16-extra8.jpg" alt="Dining space" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Dining space</div>
+      </div>
+
+      <div class="masonry-item" data-index="16">
+        <img src="images/17-extra9.jpg" alt="Bedroom detail" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Bedroom detail</div>
+      </div>
+
+      <div class="masonry-item" data-index="17">
+        <img src="images/18-extra10.jpg" alt="Bathroom" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Bathroom</div>
+      </div>
+
+      <div class="masonry-item" data-index="18">
+        <img src="images/19-extra11.jpg" alt="Kitchen" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Kitchen</div>
+      </div>
+
+      <div class="masonry-item" data-index="19">
+        <img src="images/20-extra12.jpg" alt="Outdoor area" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Outdoor area</div>
+      </div>
+
+      <div class="masonry-item" data-index="20">
+        <img src="images/21-extra13.jpg" alt="Terrace" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Terrace</div>
+      </div>
+
+      <div class="masonry-item" data-index="21">
+        <img src="images/22-extra14.jpg" alt="Property exterior" loading="lazy">
+        <div class="masonry-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+        <div class="masonry-caption">Property exterior</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     LIGHTBOX
+============================================= -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous photo">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <div class="lightbox-img-wrap">
+    <img id="lightboxImg" src="" alt="">
+  </div>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next photo">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+  <div class="lightbox-counter" id="lightboxCounter"></div>
+</div>
+
+<!-- =============================================
+     CTA STRIP
+============================================= -->
+<div class="cta-strip">
+  <div class="container">
+    <div class="cta-strip-inner">
+      <div class="cta-strip-text">
+        <h3>Ready to book your stay?</h3>
+        <p>Check dates, ask questions, or book directly — we reply within hours.</p>
+      </div>
+      <div class="cta-strip-actions">
+        <a href="https://www.vacation-bookings.com/d/46175606?ctx=QCKrYvO2bT" target="_blank" rel="noopener" class="btn btn-primary" style="height:48px;padding:0 var(--s24);font-size:15px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Check availability
+        </a>
+        <a href="https://wa.me/34666228672" class="btn-whatsapp" style="height:48px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          Message on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =============================================
+     FOOTER
+============================================= -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo">Casa<span>Málaga</span></span>
+        <p>A beautifully restored Andalusian appartment in Málaga's historic centre. Your calm courtyard sanctuary in the heart of the city.</p>
+      </div>
+      <div class="footer-col">
+        <h5>The Property</h5>
+        <ul>
+          <li><a href="index.html#house">The House</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="index.html#location">Location</a></li>
+          <li><a href="index.html#booking-check">Check availability</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Málaga</h5>
+        <ul>
+          <li><a href="index.html#malaga">Highlights</a></li>
+          <li><a href="index.html#malaga">Culture</a></li>
+          <li><a href="index.html#malaga">Food &amp; Leisure</a></li>
+          <li><a href="index.html#location">Getting here</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="https://wa.me/34666228672">WhatsApp</a></li>
+          <li><a href="mailto:hello@casamalaga.eu">hello@casamalaga.eu</a></li>
+          <li><a href="house-rules.html">House rules</a></li>
+          <li><a href="cancellation-policy.html">Cancellation policy</a></li>
+          <li><a href="privacy-policy.html">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 CasaMálaga.eu · All rights reserved</p>
+      <div class="footer-badges">
+        <span class="footer-badge">🔒 Secure booking</span>
+        <span class="footer-badge">⭐ 4.9 rating</span>
+        <span class="footer-badge">🏡 Verified property</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- =============================================
+     JAVASCRIPT
+============================================= -->
+<script>
+  // Mobile nav
+  const burger = document.getElementById('burger');
+  const mobileNav = document.getElementById('mobileNav');
+  const navOverlay = document.getElementById('navOverlay');
+  const navClose = document.getElementById('navClose');
+
+  function openNav() {
+    mobileNav.classList.add('open');
+    navOverlay.classList.add('visible');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeNav() {
+    mobileNav.classList.remove('open');
+    navOverlay.classList.remove('visible');
+    document.body.style.overflow = '';
+  }
+
+  burger.addEventListener('click', openNav);
+  navClose.addEventListener('click', closeNav);
+  navOverlay.addEventListener('click', closeNav);
+  document.querySelectorAll('.nav-link-mobile').forEach(link => {
+    link.addEventListener('click', closeNav);
+  });
+
+  // Lightbox
+  const items = document.querySelectorAll('.masonry-item');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxCaption = document.getElementById('lightboxCaption');
+  const lightboxCounter = document.getElementById('lightboxCounter');
+  const lightboxClose = document.getElementById('lightboxClose');
+  const lightboxPrev = document.getElementById('lightboxPrev');
+  const lightboxNext = document.getElementById('lightboxNext');
+  const total = items.length;
+  let current = 0;
+
+  function openLightbox(index) {
+    current = index;
+    const item = items[current];
+    const img = item.querySelector('img');
+    const caption = item.querySelector('.masonry-caption');
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCaption.textContent = caption ? caption.textContent : '';
+    lightboxCounter.textContent = `${current + 1} / ${total}`;
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function showPrev() {
+    openLightbox((current - 1 + total) % total);
+  }
+
+  function showNext() {
+    openLightbox((current + 1) % total);
+  }
+
+  items.forEach((item, i) => {
+    item.addEventListener('click', () => openLightbox(i));
+  });
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightboxPrev.addEventListener('click', showPrev);
+  lightboxNext.addEventListener('click', showNext);
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') showPrev();
+    if (e.key === 'ArrowRight') showNext();
+  });
+
+  // Auto-open lightbox when arriving with #photo-N hash (e.g. from main page thumbs)
+  const hashMatch = window.location.hash.match(/^#photo-(\d+)$/);
+  if (hashMatch) {
+    const idx = parseInt(hashMatch[1], 10);
+    if (idx >= 0 && idx < total) openLightbox(idx);
+  }
+</script>
+
+</body>
+</html>
